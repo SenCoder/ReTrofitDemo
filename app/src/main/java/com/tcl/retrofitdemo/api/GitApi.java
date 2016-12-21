@@ -16,8 +16,8 @@ public interface GitApi {
      *
      * @param username is for passing values from editText, eg:user=basil2style.
      *
-     *  @GET("/users/{username}") is OK
+     *  @GET("/users/{user}") is OK
      */
-    @GET("/users/{user}")
-    public Call<User> getUser(@Path("user") String username);
+    @GET("/users/{username}")
+    public Call<User> getUser(@Path("username") String username);
 }
